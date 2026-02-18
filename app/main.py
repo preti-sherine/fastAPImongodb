@@ -13,7 +13,8 @@ app.mount("/static", StaticFiles(directory="app/static"), name="static")
 templates = Jinja2Templates(directory="app/templates")
 
 # 🔐 MongoDB Connection
-MONGO_URL = "mongodb+srv://azureuser:aA1234567890@swarnae-aicomm-clusters.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000"
+
+MONGO_URL = "mongodb+srv://preti:Jan@202720282029@preticluster.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000"
 
 client = AsyncIOMotorClient(MONGO_URL)
 db = client.ecommerceDB

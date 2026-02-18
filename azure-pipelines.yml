@@ -2,8 +2,8 @@ trigger:
 - main
 
 variables:
-  azureServiceConnectionId: '57e2d243-130a-4d15-800e-47bcd42bbf5a'
-  webAppName: 'testeeeappee'
+  azureServiceConnectionId: 'b9323200-f9bc-4d1f-bdd6-b066b546cf5b'
+  webAppName: 'pretiwebapp'
   pythonVersion: '3.11'
 
 stages:
@@ -48,7 +48,7 @@ stages:
     pool:
       name: TestAgent   # ✅ Self-hosted pool again
 
-    environment: testeeeappee
+    environment: pretiwebapp
 
     strategy:
       runOnce:

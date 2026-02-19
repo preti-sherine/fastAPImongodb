@@ -14,7 +14,7 @@ templates = Jinja2Templates(directory="app/templates")
 
 # 🔐 MongoDB Connection
 
-MONGO_URL = "mongodb+srv://azureuser:Jan@202720282029@pretidb.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000"
+MONGO_URL = "mongodb+srv://azureuser:Jan%40202720282029@pretidb.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000"
 
 client = AsyncIOMotorClient(MONGO_URL)
 db = client.ecommerceDB
